@@ -1,7 +1,3 @@
-Com base em tudo o que discutimos — a stack moderna, as regras de entrega em mãos e o sistema de prazos — aqui está uma estrutura de **README.md** completa, profissional e pronta para o seu repositório.
-
----
-
 # 📚 MindShelf: Onde seus sonhos ganham asas para voar
 
 > **Status do Projeto:** 🚧 Em desenvolvimento
@@ -19,8 +15,6 @@ Diferente de bibliotecas digitais, o MindShelf foca na **conexão física**. O s
 * **Entrega em Mãos (Obrigatório):** O sistema não realiza envios. A entrega e devolução devem ser combinadas e realizadas presencialmente entre as partes.
 * **Prazo de Empréstimo:** * **Primeiro empréstimo:** 14 dias corridos.
 * **Usuários Recorrentes:** O prazo pode variar de acordo com o perfil, contexto e histórico do usuário na plataforma.
-
-
 * **Ciclo de Doação:** Usuários podem cadastrar livros para doação definitiva, que passam a integrar o acervo público da comunidade.
 
 ---
@@ -58,7 +52,7 @@ O projeto utiliza o que há de mais moderno no ecossistema React para garantir p
 
 ## 📂 Estrutura de Pastas Sugerida
 
-```text
+```bash
 src/
 ├── assets/          # Imagens e ícones
 ├── components/      # Componentes reutilizáveis (Shadcn)
@@ -68,7 +62,6 @@ src/
 ├── services/        # Configuração do Firebase e chamadas de API
 ├── types/           # Definições de interfaces TypeScript
 └── utils/           # Funções utilitárias e máscaras
-
 ```
 
 ---
@@ -78,7 +71,7 @@ src/
 - **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/mindshelf.git
+git clone https://github.com/tatyanepgoncalves/mindshelf.git
 
 ```
 
