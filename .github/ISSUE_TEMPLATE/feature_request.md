@@ -1,4 +1,12 @@
-# Descrição da feature
+---
+name: "✨ Nova funcionalidade"
+about: "Sugestão de nova feature para o projeto mindShelf"
+title: "✨ Funcionalidade: "
+labels: "feature"
+assignees: ""
+---
+
+## Descrição da feature
 <!-- Descreva claramente a funcionalidade que você deseja adicionar -->
 
 ## Funcionalidades esperadas
