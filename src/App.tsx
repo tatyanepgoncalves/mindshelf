@@ -1,7 +1,5 @@
-
+import AppProvider from './routes/AppProvider'
 
 export default function App() {
-  return (
-    <div>App</div>
-  )
+  return <AppProvider />
 }
