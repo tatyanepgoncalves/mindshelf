@@ -43,7 +43,7 @@ export const useSignup = () => {
       })
 
       toast.success(
-        `${username} cadastrado com sucesso! Bem-vindo(a) ao MindShelf.`
+        `Usuário cadastrado com sucesso! Bem-vindo(a) ao MindShelf, ${username}.`
       )
 
       // Limpeza dos campos e navegação.

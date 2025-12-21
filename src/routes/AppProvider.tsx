@@ -6,9 +6,11 @@ import {
 } from 'react-router-dom'
 import { Toaster } from 'sonner'
 import Layout from '@/components/layout/private/Layout'
+import { AuthProvider } from '@/contexts/AuthContext'
 import HomePage from '@/pages/HomePage'
 import LoginPage from '@/pages/LoginPage'
 import SignupPage from '@/pages/SignupPage'
+import Private from './Private'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,7 +19,14 @@ const router = createBrowserRouter(
       <Route element={<SignupPage />} path="/cadastrar" />
 
       <Route element={<Layout />} path="/">
-        <Route element={<HomePage />} index path="home" />
+        <Route
+          element={
+            <Private>
+              <HomePage />
+            </Private>
+          }
+          path="home"
+        />
       </Route>
     </>
   )
@@ -25,9 +34,9 @@ const router = createBrowserRouter(
 
 export default function AppProvider() {
   return (
-    <>
+    <AuthProvider>
       <RouterProvider router={router} />
-      <Toaster position="top-center" />
-    </>
+      <Toaster position="top-center" richColors />
+    </AuthProvider>
   )
 }
