@@ -7,6 +7,8 @@ import {
 import { Toaster } from 'sonner'
 import Layout from '@/components/layout/private/Layout'
 import { AuthProvider } from '@/contexts/AuthContext'
+import CatalogoLivrosPage from '@/pages/CatalogoLivrosPage'
+import DoarLivrosPage from '@/pages/DoarLivrosPage'
 import HomePage from '@/pages/HomePage'
 import LoginPage from '@/pages/LoginPage'
 import SignupPage from '@/pages/SignupPage'
@@ -26,6 +28,22 @@ const router = createBrowserRouter(
             </Private>
           }
           path="home"
+        />
+        <Route
+          element={
+            <Private>
+              <CatalogoLivrosPage />
+            </Private>
+          }
+          path="catalogo-livros"
+        />
+        <Route
+          element={
+            <Private>
+              <DoarLivrosPage />
+            </Private>
+          }
+          path="doar-livros"
         />
       </Route>
     </>
