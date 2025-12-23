@@ -1,18 +1,15 @@
-import { BookCopy, Home, LibraryBig, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { Link, useLocation } from 'react-router-dom'
+import AvatarHeader from '@/components/AvatarHeader/AvatarHeader'
 import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetFooter,
   SheetTrigger,
 } from '@/components/ui/sheet'
 import { cn } from '@/lib/utils'
-
-const menuItem = [
-  { title: 'Home', icon: Home, path: '/home' },
-  { title: 'Catálogo de livros', icon: LibraryBig, path: '/catalogo-livros' },
-  { title: 'Doar livros', icon: BookCopy, path: '/doar-livros' },
-]
+import { menuItem } from '@/types/menu'
 
 export default function MenuMobile() {
   const location = useLocation()
@@ -49,6 +46,10 @@ export default function MenuMobile() {
               )
             })}
           </nav>
+
+          <SheetFooter>
+            <AvatarHeader />
+          </SheetFooter>
         </SheetContent>
       </Sheet>
     </div>
