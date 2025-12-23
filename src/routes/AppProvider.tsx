@@ -9,6 +9,7 @@ import Layout from '@/components/layout/private/Layout'
 import { AuthProvider } from '@/contexts/AuthContext'
 import CatalogoLivrosPage from '@/pages/CatalogoLivrosPage'
 import DoarLivrosPage from '@/pages/DoarLivrosPage'
+import ErrorPage from '@/pages/ErrorPage'
 import HomePage from '@/pages/HomePage'
 import LoginPage from '@/pages/LoginPage'
 import SignupPage from '@/pages/SignupPage'
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
     <>
       <Route element={<LoginPage />} index path="/" />
       <Route element={<SignupPage />} path="/cadastrar" />
+      <Route element={<ErrorPage />} path="*" />
 
       <Route element={<Layout />} path="/">
         <Route
