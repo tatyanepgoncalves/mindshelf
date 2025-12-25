@@ -37,7 +37,7 @@ const router = createBrowserRouter(
               <CatalogoLivrosPage />
             </Private>
           }
-          path="catalogo-livros"
+          path="catalogo-livro"
         />
         <Route
           element={
@@ -45,7 +45,7 @@ const router = createBrowserRouter(
               <DoarLivrosPage />
             </Private>
           }
-          path="doar-livros"
+          path="doar-livro"
         />
       </Route>
     </>
