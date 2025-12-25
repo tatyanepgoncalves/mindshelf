@@ -20,9 +20,11 @@ const cardsInfo = [
 
 export default function SecaoStatus() {
   return (
-    <section className="flex items-center justify-center p-6">
+    <section className="my-10 flex items-center justify-center p-6">
       <div className="flex w-full max-w-7xl flex-col gap-4 md:gap-8">
-        <h2 className="text-center font-semibold text-xl md:text-3xl">Seu resumo</h2>
+        <h2 className="text-center font-semibold text-xl md:text-3xl">
+          Seu resumo
+        </h2>
 
         <section className="grid gap-4 md:grid-cols-3">
           {cardsInfo.map((card) => (
