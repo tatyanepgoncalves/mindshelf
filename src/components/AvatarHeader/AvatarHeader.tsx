@@ -28,7 +28,8 @@ export default function AvatarHeader() {
         <DropdownMenuTrigger asChild>
           <Button
             aria-label="User menu"
-            className="flex h-auto w-full items-center justify-between border-0 bg-purple-200 p-2 shadow-none"
+            className="flex h-auto w-full items-center justify-between border-0 p-2 shadow-none"
+            variant="secondary"
           >
             <div className="flex items-center gap-3">
               <Avatar className="h-9 w-9">
@@ -56,7 +57,7 @@ export default function AvatarHeader() {
           </Button>
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent align="end" className="w-75" side="top">
+        <DropdownMenuContent align="end" className="w-75 md:w-55" side="top">
           <DropdownMenuGroup>
             {avatarMenu.map((item) => (
               <DropdownMenuItem asChild key={item.title}>

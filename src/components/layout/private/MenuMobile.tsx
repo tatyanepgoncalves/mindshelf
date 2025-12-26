@@ -8,17 +8,19 @@ import {
   SheetFooter,
   SheetTrigger,
 } from '@/components/ui/sheet'
+import { useHeader } from '@/hooks/useHeader'
 import { cn } from '@/lib/utils'
 import { menuItem } from '@/types/menu'
 
 export default function MenuMobile() {
   const location = useLocation()
+  const { isScrolled } = useHeader()
 
   return (
-    <div className="block md:hidden">
+    <div className="block lg:hidden">
       <Sheet>
         <SheetTrigger className="cursor-pointer">
-          <Menu className="text-zinc-200" />
+          <Menu className={cn(isScrolled ? 'text-white' : 'text-zinc-900')} />
         </SheetTrigger>
 
         <SheetContent className="px-6 pt-30">
