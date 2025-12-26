@@ -1,24 +1,3 @@
-// import { useNavigate } from 'react-router-dom'
-// import { Button } from '../ui/button'
-
-// export default function HeroSection() {
-//   const navigate = useNavigate()
-
-//   return (
-//     <section className="flex h-screen items-center justify-center bg-[url('@/images/Image-Hero.png')] bg-center bg-cover text-center">
-//       <div className="px-6 md:w-xl">
-//         <div className="space-y-2">
-
-//         </div>
-
-//         <Button className="mt-10" >
-//           Exlorar Catálogo
-//         </Button>
-//       </div>
-//     </section>
-//   )
-// }
-
 import { useNavigate } from 'react-router-dom'
 import HeroImage from '@/images/icon-home.svg'
 import { Button } from '../ui/button'
@@ -46,7 +25,7 @@ export default function HeroSection() {
         </div>
         <Button
           className="w-full md:w-fit"
-          onClick={() => navigate('/catalogo-livros')}
+          onClick={() => navigate('/catalogo-livro')}
         >
           Exlorar Catálogo
         </Button>
